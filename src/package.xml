@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>DCE_BypassManager</members>
+        <members>DCE_BypassManager_TEST</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>User.DCE_AllTrigger__c</members>
+        <members>User.DCE_AV__c</members>
+        <members>User.DCE_AW__c</members>
+        <members>User.DCE_TriggerBlackList__c</members>
+        <members>User.DCE_VBL__c</members>
+        <members>User.DCE_WBL__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>Admin</members>
+        <name>Profile</name>
+    </types>
+    <version>40.0</version>
+</Package>

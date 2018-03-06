@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>DCE_AllTrigger__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>[DCE] disable all trigger</description>
+        <externalId>false</externalId>
+        <label>All Trigger</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>DCE_AV__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>[DCE] disable all validation rule</description>
+        <externalId>false</externalId>
+        <label>All Validation Rule</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>DCE_AW__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>[DCE] disable all workflow</description>
+        <externalId>false</externalId>
+        <label>All Workflow</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>DCE_TriggerBlackList__c</fullName>
+        <description>[DCE] black list to dynamically bypass trigger</description>
+        <externalId>false</externalId>
+        <label>Trigger Black List</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Lead</fullName>
+                    <default>false</default>
+                    <label>Lead</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>DCE_VBL__c</fullName>
+        <description>[DCE] black list to dynamically bypass validation rule</description>
+        <externalId>false</externalId>
+        <label>Validation Rule Black List</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Validation Rule</fullName>
+                    <default>false</default>
+                    <label>Validation Rule</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>DCE_WBL__c</fullName>
+        <description>[DCE] black list to dynamically bypass workflow</description>
+        <externalId>false</externalId>
+        <label>Workflow Black List</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Workflow</fullName>
+                    <default>false</default>
+                    <label>Workflow</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>10</visibleLines>
+    </fields>
+</CustomObject>
