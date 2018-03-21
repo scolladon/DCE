@@ -51,7 +51,7 @@ Not($User.DCE_AV__c) &&  NOT(INCLUDES($User.DCE_VBL__c,'MyValidationRule')) && M
 In order to by pass Workflow rule or Process Buidler you can configure your user with the multipicklist DCE_WBL__c to filter what you want to prevent or you can use the checkbox DCE_AW__c to prevent all.
 Then configure you're workflow rule / Process Builder this way :
 ```java
-Not($User.DCE_AW__c) &&  NOT(INCLUDES($User.DCE_WBL__c,'MyValidationRule')) && MyConditions
+Not($User.DCE_AW__c) &&  NOT(INCLUDES($User.DCE_WBL__c,'MyFlow')) && MyConditions
 ```
 
 ## Authors
