@@ -20,22 +20,22 @@ Here we go !
 In order to apply the dynamic code execution, wrap you code in a if statement :
 ```java
 trigger myTrigger on myObject (after update) {
-  if(DCE_BypassManager.isAllowed('myTrigger')) {
+  if(DCE.isAllowed('myTrigger')) {
     MyObjectTriggerDelegate();
   } 
 }
 ```
 
-If you user as the value "myTrigger" selected in the multipicklist DCE_TriggerBlackList__c the DCE_BypassManager.isAllowed('myTrigger') condition will be false.
+If you user as the value "myTrigger" selected in the multipicklist DCE_TriggerBlackList__c the DCE.isAllowed('myTrigger') condition will be false.
 
 You can force to prevent all in your code or in your script either by checking the field DCE_AllTrigger__c or by setting the preventAll boolean to true dynamically :
 ```java
-DCE_BypassManager.preventAll = true;
+DCE.preventAll = true;
 ```
 
 You can force to prevent execution after n execution :
 ```java
-DCE_BypassManager.allowUntil('myTrigger', 2);
+DCE.allowUntil('myTrigger', 2);
 ```
 This way the trigger myTrigger will be executed 2 times.
 
