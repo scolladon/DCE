@@ -1,4 +1,4 @@
-public without sharing class DCE_BypassManager {
+public without sharing class DCE {
   private static final Map<String,Integer> execNtimes = new Map<String,Integer>();
   public static final Set<String> blacklist = new Set<String>();
   public static Boolean preventAll;
