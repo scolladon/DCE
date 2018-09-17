@@ -15,8 +15,12 @@
         <name>CustomField</name>
     </types>
     <types>
+        <members>DCE</members>
+        <name>PlatformCachePartition</name>
+    </types>
+    <types>
         <members>Admin</members>
         <name>Profile</name>
     </types>
-    <version>40.0</version>
+    <version>42.0</version>
 </Package>

@@ -14,13 +14,20 @@ Here we go !
   <img alt="Deploy to Salesforce" src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/src/main/webapp/resources/img/deploy.png">
 </a>
 
+### Caching
+
+This implementation use Platform Cache (Session Cache).
+Ensure you have platform Cache enabled or the deployment will fail.
+
+If you **do not want** the version with the Platform Cache, copy the code in the class DCE_NOCACHE.txt to DCE.cls instead
+
 
 ### Trigger
 
 In order to apply the dynamic code execution, wrap you code in a if statement :
 ```java
 trigger myTrigger on myObject (after update) {
-  if(DCE.isAllowed('myTrigger')) {
+  if(DCE.allow('myTrigger')) {
     MyObjectTriggerDelegate();
   } 
 }

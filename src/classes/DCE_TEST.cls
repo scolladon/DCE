@@ -2,8 +2,9 @@
 private class DCE_TEST {
   @isTest
   static void test(){
-    DCE.allowUntil('AP123',1);
-    DCE.isAllowed('AP123');
-    DCE.isAllowed('AP123');
+    DCE.allowUntil('test',1);
+    DCE.prevent('test+');
+    DCE.allow('test');
+    DCE.allow('test');
   }
 }
