@@ -53,3 +53,13 @@ TestsResultsCache.xml
 
 **/npm-debug.log
 **/package-lock.json
+
+.xyconfig
+deployResult.json
+script-post
+script-pre
+delete
+insert
+update
+upsert
+
