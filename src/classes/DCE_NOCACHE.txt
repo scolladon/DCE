@@ -1,5 +1,6 @@
 public without sharing class DCE {
   private static final String CACHE_SESSION_NAME = 'DCE';
+  @TestVisible
   private static final Map<String,Integer> execNtimes = new Map<String,Integer>();
   private static final String blacklist;
   public static Boolean preventAll;
